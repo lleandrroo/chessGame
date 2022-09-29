@@ -13,9 +13,7 @@ public class Application {
 		
 		ChessMatch chessMatch = new ChessMatch();
 		UI.printBoard(chessMatch.getPieces());
-		
-		System.out.println(position);
-		System.out.println(board.toString());
+
 
 	}
 
