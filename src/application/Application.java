@@ -13,8 +13,6 @@ public class Application {
 		
 		ChessMatch chessMatch = new ChessMatch();
 		UI.printBoard(chessMatch.getPieces());
-
-
 	}
 
 }
