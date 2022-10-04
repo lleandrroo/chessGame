@@ -17,7 +17,7 @@ public class Application {
 		ChessMatch chessMatch = new ChessMatch();
 		List<ChessPiece> captured = new ArrayList<>();
 		
-		while (true) {
+		while (!chessMatch.getCheck()) {
 			try {
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
@@ -45,8 +45,9 @@ public class Application {
 			catch (InputMismatchException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
-			}
-			
-		}		
+			}		
+		}	
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 	}
 }
